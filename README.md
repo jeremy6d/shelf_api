@@ -1,6 +1,8 @@
 # shelf_api
 
-It is often the case that software projects require a layer of content management alongside the business application.  While content is usually consumed in a straightforward manner (HTML pages, images, etc.), the rules for organizing the content are often unique to the domain, rendering turnkey content management system cumbersome.
+It is often the case that software projects require a layer of content management alongside the business application.  While content is usually consumed in a straightforward manner (HTML pages, images, etc.), the rules for organizing the content are often unique to the domain. So you either spend far, far too long hacking the typical turnkey CMS to get that last 10% of domain-specific behavior or you have to deal with the nightmare of the ueber-configurable CMS that does everything unintelligibly.
+
+Instead of spending a ton of time forcing a square peg into a round hole on that last 10%, what you need is a 90% CMS solution that gets out of your way.  Then just write code for the last 10% that is exactly what you need.  After all, we're not the normal Wordpress user; we're comfortable putting gems together with connector Ruby to build something unique to the problem domain.
 
 Shelf is an open-ended content storage and retrieval system designed to help you roll your own CMS with the least amount of coding possible.  This piece of the shelf system sits as a thin layer over the database and handles the retrieval and storage of "resources".  You would then write the server(s) that process GETs, POSTs, etc.  
 
