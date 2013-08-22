@@ -10,7 +10,7 @@ Resources are documents that have the following features:
 
 * a unique _key_ for looking up a single resource (e.g. "index", "something/something-else/your-mom")
 * one or more _associated keys_ for retrieving groups of content needed for a particular resource.  For example, a resource  with a key of "index" might require resources with keys of "header", "body", and "footer" in order to render itself to HTML.  This would require all of these resources to include "index" within their collection of associated keys, so when "index" is looked up it can either pull everything it needs or ONLY get "index", as needed
-* a hash that associates content with particular MIME types. So "index" might be accessible as HTML, or as a JPG, or as a piece of JSON for AJAX requests, etc. It's up to the content creator to set these as desired according to domain-specific rules.
+* a _content_ hash that tracks various MIME types. So "index" might be accessible as HTML, or as a JPG, or as a piece of JSON for AJAX requests, etc. It's up to the content creator to set these as desired according to domain-specific rules.
 * zero or more _tags_ that provide custom details about the resource to be interpreted by the shelf-integrated server (e.g. "requires-authentication", "gallery-image")
 * a _cache duration_ working with any number of cache layers
 
